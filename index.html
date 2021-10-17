@@ -8,34 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="" type="image/favicon">
     <title>dine</title>
 </head>
-<body>
-    <div class="section1">
+<body> 
+    <div class="section1">   
         <div class="textcontent">
             <h2>dine</h2>
             <h1>Reservations</h1>
             <p>We can wait to host you. If you have any special requirements please feel free to call on the phone number below.We'll be happy to accommodate you.</p>    
         </div>
         <div class="reservations">
-            <form action="">
-                <input type="text" name="name" placeholder="Name" required />
-                <input type="email" name="email" placeholder="Email" required />
+            <form>
+                <input type="text" name="name" id="name" placeholder="Name" required />
+                <input type="email" name="email" id="email" placeholder="Email" required />
                 <div class="date-group">
                     <label for="date">Pick a date</label>
-                    <input type="date" name="date" required />
+                    <div class="date-group-item">
+                        <input type="text" name="month" id="month" placeholder="MM" required />
+                        <input type="text" name="day" id="day" placeholder="DD" required />
+                        <input type="text" name="year" id="year" placeholder="YYYY" required />
+                    </div>    
                 </div>
-                <div class="date-group">
+                <div class="time-group">                    
                     <label for="time">Pick a time</label>
-                    <input type="time" name="date" required />
+                    <div class="time-group-item">
+                        <input type="text" name="hour" id="hour" placeholder="00" required />
+                        <input type="text" name="minute" id="minute" placeholder="00" required />
+                        <select id="am-pm">
+                            <option name="">AM</option>
+                            <option name="">PM</option>
+                        </select>
+                    </div>
                 </div>
-                <ul>
-                    <li>4 people</li>
-                </ul>
-                <button>MAKE RESERVATION</button>
+                <div class="icon">
+                    <button class="icon-minus" id="icon-minus"></button>
+                        <p class="customer" id="customer">1 person</p>
+                    <button class="icon-plus" id="icon-plus"></button>
+                </div>
+                <button id="submit">MAKE RESERVATION</button>
             </form>
-        </div>
-
+        </div>        
+    </div>
+    <div class="pattern">
+        <img src="./utils/patterns/pattern-lines.svg" />
     </div>
     <div class="section3">
         <h2 class="footer-h2">dine</h2>
@@ -44,4 +60,5 @@
     </div>
 </body>
 <script src="index.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </html>

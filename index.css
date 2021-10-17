@@ -8,12 +8,12 @@ body{
     background-image: url("./utils/images/hero-bg-desktop.jpg");
     background-repeat: no-repeat;
     width: 80%;
-    height: 500px;
+    height: 400px;
     padding: 25px 0 50px 80px;
-    margin: 0 100px 250px 100px;
+    margin: 0 100px 100px 100px;
 }
 p{
-    color: white;
+    color: white; 
     width: 70%;
     font-size: 18px;
 }
@@ -27,16 +27,19 @@ h1{
 h2{
     color: white;
     font-size: 40px;
-    font-weight: 600px;
+    font-weight: 700;
     padding: 0 0 50px 0;
+}
+h5{
+    width: 100%;
 }
 .reservations{
     display: block;
     position: relative;
     text-align: justify;
     background-color: white;
-    width: 60%;
-    height: 320px;
+    width: 70%;
+    height: 350px;
     margin: 200px 100px 0px 0px;
     padding: 30px;
     box-shadow: 0px 10px 8px #888888;
@@ -57,25 +60,103 @@ input:focus {
 
 .date-group{
     display: flex;
-    
+        
+}
+.time-group{
+    display: flex; 
+}
+label{
+    width: 65%;
+    padding: 0 20px 0 0;
+}
+.date-group input[type=text]{
+    width: 18%;
+    padding: 0 0px 0 20px;
 }
 
-label{
-    width: 60%;
+.time-group input[type=text], .time-group select{
+    width: 18%;
+    padding: 0px 0px 0px 15px;
 }
+#am-pm{
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #888888;
+    padding: 9px;
+    width: 50px;
+}
+
+.icon{
+    display: flex;
+    width: 100%;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #888888;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.icon p{
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+}
+
+.icon-minus{
+    background-image: url("./utils/icons/icon-minus.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: transparent;
+    width: 2px;
+}
+.icon-minus:hover{
+    background-color:transparent;
+    border: none;
+    width: 2px;
+}
+
+.icon-plus{
+    background-image: url("./utils/icons/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: transparent;
+    width: 2px;
+}
+
+.icon-plus:hover{
+    background-color:transparent;
+    border: none;
+    width: 2px;
+}
+ul{
+    list-style-image: url('./utils/icons/icon-minus.svg');
+    border-bottom: 1px solid #888888;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
 button{
     background-color: black;
     color: #ffffff;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid white;
 }
 button:hover{
     background-color: white;
     color: #000000;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid black;
+}
+.pattern{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+img{    
+    width: 300px;
+    height: 100px;
 }
 .section3{
     display:flex;
@@ -91,6 +172,8 @@ button:hover{
     font-size: 14px;
     line-height:2;
 }
+    
+
 @media (max-width: 600px){
 .section1{
     display:block;
@@ -112,13 +195,15 @@ h2{
     font-size: 30px;
     color: white;
     padding: 0 0 20px 0;
-    width: 90%;
+    width: 100%;
 }
 
 h1{
+    text-align: center;
     color: white;
     font-size: 40px;
     padding: 0 0 5px 0;
+    width: 100%;
 }
 
 .reservations{
@@ -127,15 +212,22 @@ h1{
     text-align: left;
     background-color: white;
     width: 75%;
-    height: inherit;
+    height: 400px;
     margin: 60px 0px 0px 0px;
     padding: 30px;
     box-shadow: 0px 10px 8px #888888;
 }
 
 .date-group{
-    display: block;
-    
+    display: block;  
+}
+
+.time-group{
+    display: block;    
+}
+
+.pattern{
+    display: none;
 }
 .section3{
     display:block;
@@ -144,6 +236,10 @@ h1{
     width: 50%;
     padding: 25px 50px 50px 50px;
     margin: 0 100px 10px 100px;
+}
+.footer-h2{
+    width: 100%;
+    text-align: center;
 }
 .section3 p{
     padding:20px 5px; 
@@ -192,6 +288,31 @@ h1{
         padding: 30px;
         box-shadow: 0px 10px 8px #888888;
     }
+
+    label{
+    width: 70%;
+    padding: 0 20px 0 0;
+    }
+
+    .date-group input[type=text]{
+        width: 15%;
+        padding: 0px 0px 0px 25px;
+        text-align: right;
+    }
+
+    .time-group input[type=text], .time-group select{
+        width: 20%;
+        padding: 0px 0px 0px 15px;
+    }
+
+    #am-pm{
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid #888888;
+        padding: 9.5px;
+        width: 60px;
+    }
+
     .section3{
         display:block;
         text-align: center;
@@ -204,3 +325,63 @@ h1{
         padding:20px 5px; 
     }
     }
+
+    /* @media only screen (max-width: 370px){
+        .section1{
+            display:block;
+            text-align: center;
+            background-image: url("./utils/images/hero-bg-mobile.jpg");
+            width: 50%;
+            height: 350px;
+            padding: 25px 50px 50px 50px;
+            margin: 0 20px 500px 20px;
+        }
+        
+        p{
+            color: white;
+            width: 100%;
+            font-weight: 100;
+            font-size: 12px;
+        } 
+        h2{
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            padding: 0 0 20px 0;
+            width: 90%;
+        }
+        
+        h1{
+            color: white;
+            font-size: 20px;
+            padding: 0 0 5px 0;
+        }
+        
+        .reservations{
+            display: block;
+            position: relative;
+            text-align: left;
+            background-color: white;
+            width: 75%;
+            height: inherit;
+            margin: 60px 0px 0px 0px;
+            padding: 30px;
+            box-shadow: 0px 10px 8px #888888;
+        }
+        
+        .date-group{
+            display: block;
+            
+        }
+        .section3{
+            display:block;
+            text-align: center;
+            background-color: black;
+            width: 50%;
+            padding: 25px 50px 50px 50px;
+            margin: 0 100px 10px 100px;
+        }
+        .section3 p{
+            padding:20px 5px; 
+        }
+        } */
