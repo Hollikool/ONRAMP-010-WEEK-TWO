@@ -60,7 +60,11 @@ input:focus {
 
 .date-group{
     display: flex;
-        
+    
+}
+
+.date-group-item{
+   width: 100%; 
 }
 .time-group{
     display: flex; 
@@ -86,6 +90,27 @@ label{
     width: 50px;
 }
 
+#month{
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #888888;
+    padding: 9px;
+    width: 50px;
+}
+#day{
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #888888;
+    padding: 9px;
+    width: 50px;
+}
+#year{
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #888888;
+    padding: 9px;
+    width: 50px;
+}
 .icon{
     display: flex;
     width: 100%;

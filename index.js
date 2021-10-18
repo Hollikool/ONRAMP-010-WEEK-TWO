@@ -53,7 +53,7 @@ minus.onclick = function(){
 }
 
 submit.onclick = function(){
-    myName.innerHTML = myName;
+    //myName.innerHTML = myName;
     if(myName === ""){
         alert("Name expected!");
     }else if(myEmail === ""){
@@ -70,38 +70,6 @@ submit.onclick = function(){
         text: "You have booked your reservation!",
         icon: "success",        
       });
-    return false;
+    return true;
 }
 }
-
-/* const list = document.querySelector('ul');
-const nameField = document.querySelector('input'); */
-/* const emailField = document.querySelector('input');
-const monthField = document.querySelector('input');
-const dayField = document.querySelector('input');
-const yearField = document.querySelector('input'); */
-
-/* button.onclick = function(){
-    let nameValue = nameField.value;
-    nameField.value = '';
-
-    const listItem = document.createElement('li');
-    const listText = document.createElement('span');
-
-    list.appendChild(listItem);
-    listItem.appendChild(listText);
-    listText.textContent = nameValue;
-
-    nameField.focus()
-} 
-
-plus.onclick = function(){
-    
-    let myCustomer = customer.textContent;
-    if(myCustomer === ""){
-        alert('Item expected!');
-        //myCustomer = "1 person";
-    }
-    //plus.focus();
-}
-*/
